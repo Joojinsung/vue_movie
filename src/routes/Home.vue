@@ -1,8 +1,15 @@
 <template>
-  <h1>Home!</h1>
-  <button class="btn btn-primary">
-    Home
-  </button>
+
+  <Headline/>
+
 </template>
-<script setup lang="ts">
+<script>
+import Headline from "@/components/Headline.vue";
+
+export default {
+
+      components: {
+        Headline
+      }
+}
 </script>
