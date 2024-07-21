@@ -24,9 +24,11 @@ export default {
 <template>
   <header>
     <div class="nav">
-      <div class="nav-item">
-        <RouterLink class="nav-link" to="">
-          About
+      <div
+          v-for="nav in navigations" :key="nav.name"
+          class="nav-item">
+        <RouterLink class="nav-link" :to="nav.href">
+          {{ nav.name }}
         </RouterLink>
       </div>
     </div>
