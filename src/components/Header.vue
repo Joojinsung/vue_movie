@@ -23,11 +23,11 @@ export default {
 
 <template>
   <header>
-    <div class="nav">
+    <div class="nav nav-pills">
       <div
           v-for="nav in navigations" :key="nav.name"
           class="nav-item">
-        <RouterLink class="nav-link" :to="nav.href">
+        <RouterLink active-class="active" class="nav-link" :to="nav.href">
           {{ nav.name }}
         </RouterLink>
       </div>
